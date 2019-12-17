@@ -25,7 +25,8 @@ import com.huazai.b2c.aiyou.vo.TbItemVO;
  * @version V1.0.0
  */
 @RequestMapping("/item")
-public class TbItemController {
+public class TbItemController
+{
 
 	@Autowired
 	private TbItemService tbItemService;
@@ -34,7 +35,8 @@ public class TbItemController {
 	private TbItemDescService tbItemDescService;
 
 	@RequestMapping("/{itemId}")
-	public String showTbItemInfo(@PathVariable Long itemId, Model model) {
+	public String showTbItemInfo(@PathVariable Long itemId, Model model)
+	{
 		// 通过商品Id，获取商品详情
 		TbItem tbItem = tbItemService.getTbItemById(itemId);
 		// 转换视图对象

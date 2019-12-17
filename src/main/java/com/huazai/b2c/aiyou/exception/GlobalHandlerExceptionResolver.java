@@ -6,9 +6,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.springframework.web.servlet.HandlerExceptionResolver;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.huazai.b2c.aiyou.utils.SendMailUtils;
-import com.huazai.b2c.aiyou.utils.SendSMSUtils;
-
 /**
  * 
  * @author HuaZai
@@ -22,17 +19,19 @@ import com.huazai.b2c.aiyou.utils.SendSMSUtils;
  *
  * @version V1.0.0
  */
-public class GlobalHandlerExceptionResolver implements HandlerExceptionResolver {
+public class GlobalHandlerExceptionResolver implements HandlerExceptionResolver
+{
 
 	@Override
 	public ModelAndView resolveException(HttpServletRequest request, HttpServletResponse response, Object handler,
-			Exception ex) {
+			Exception ex)
+	{
 		// 1、写日志文件
 
 		// 2、发送邮件
-		SendMailUtils.doSendTextMail();
+		// SendMailUtils.doSendTextMail();
 		// 3、发送短信提醒
-		SendSMSUtils.doSendSMS();
+		// SendSMSUtils.doSendSMS();
 		// 4、捕获错误并跳转到友好的提示页面
 		ModelAndView modelAndView = new ModelAndView();
 		modelAndView.addObject("code", "50000");

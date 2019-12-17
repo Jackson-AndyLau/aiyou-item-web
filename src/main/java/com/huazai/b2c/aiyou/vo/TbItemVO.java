@@ -15,27 +15,32 @@ import com.huazai.b2c.aiyou.pojo.TbItem;
  *
  * @version V1.0.0
  */
-public class TbItemVO extends TbItem {
+public class TbItemVO extends TbItem
+{
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public String[] getImages() {
+	public String[] getImages()
+	{
 		String image = this.getImage();
-		if (image != null && !image.equals("")) {
+		if (image != null && !image.equals(""))
+		{
 			String[] images = image.split(",");
 			return images;
 		}
 		return null;
 	}
 
-	public TbItemVO() {
+	public TbItemVO()
+	{
 
 	}
 
-	public TbItemVO(TbItem tbItem) {
+	public TbItemVO(TbItem tbItem)
+	{
 		this.setBarcode(tbItem.getBarcode());
 		this.setCid(tbItem.getCid());
 		this.setCreated(tbItem.getCreated());

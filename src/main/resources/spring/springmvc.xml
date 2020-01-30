@@ -18,11 +18,24 @@
 	<!-- 加载配置文件配置 -->
 	<context:property-placeholder
 		location="classpath:resource/*.properties" />
-	<!-- freemarker 配置 -->
+	<!-- freemarker 拦截配置 -->
 	<bean id="freemarkerConfig"
 		class="org.springframework.web.servlet.view.freemarker.FreeMarkerConfigurer">
 		<property name="templateLoaderPath" value="/WEB-INF/ftl/" />
 		<property name="defaultEncoding" value="UTF-8" />
 	</bean>
-	
+
+	<!-- 配置远程Dubbo服务地址 -->
+	<dubbo:application name="aiyou-item-web" />
+	<dubbo:registry protocol="zookeeper"
+		address="${single.zookeeper.baseUrl}" />
+
+	<!-- 应用调用远程服务接口 -->
+	<dubbo:reference
+		interface="com.huazai.b2c.aiyou.service.TbItemService"
+		id="tbItemService" timeout="300000" />
+	<dubbo:reference
+		interface="com.huazai.b2c.aiyou.service.TbItemDescService"
+		id="tbItemDescService" timeout="300000" />
+
 </beans>

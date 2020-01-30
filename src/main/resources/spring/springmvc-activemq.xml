@@ -14,7 +14,7 @@
 	<bean id="targetConnection"
 		class="org.apache.activemq.ActiveMQConnectionFactory">
 		<property name="brokerURL"
-			value="${single_activemq_base_url}"></property>
+			value="${single.activemq.base.url}"></property>
 	</bean>
 	
 	<!-- 通用的 SingleConnectionFactory 指定真正使用的连接工厂 -->
@@ -27,7 +27,7 @@
 	<!-- 指定订阅的主题名称 -->
 	<bean id="topicDestination"
 		class="org.apache.activemq.command.ActiveMQTopic">
-		<constructor-arg name="name" value="item-change-topic"></constructor-arg>
+		<constructor-arg name="name" value="aiyou-change-topic"></constructor-arg>
 	</bean>
 	
 	<!-- 注入监听器 -->

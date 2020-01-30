@@ -95,7 +95,7 @@ public class ItemChangeGenHtmlMessageListener implements MessageListener {
 		// 2、设置模板文件的字符集
 		configuration.setDefaultEncoding("UTF-8");
 		// 3、首先创建模板文件，再加载模板文件 模板文件的后缀官方统一的标准是.ftl 其实任何类型都行。
-		Template template = configuration.getTemplate(templateName);// 可以是<相对路径>，也可以是<绝对路径>
+		Template template = configuration.getTemplate("template.ftl");// 可以是<相对路径>，也可以是<绝对路径>
 		// 4、创建模板文件需要展示数据的数据集对象，可以使用POJO，也可以使用map 一般是使用map
 		Map<String, Object> model = new HashMap<>();
 		model.put("item", new TbItemVO(tbItem));

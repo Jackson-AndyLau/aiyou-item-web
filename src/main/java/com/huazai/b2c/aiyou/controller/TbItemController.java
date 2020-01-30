@@ -1,15 +1,8 @@
 package com.huazai.b2c.aiyou.controller;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
-
-import com.huazai.b2c.aiyou.pojo.TbItem;
-import com.huazai.b2c.aiyou.pojo.TbItemDesc;
-import com.huazai.b2c.aiyou.service.TbItemDescService;
-import com.huazai.b2c.aiyou.service.TbItemService;
-import com.huazai.b2c.aiyou.vo.TbItemVO;
 
 /**
  * 
@@ -28,23 +21,23 @@ import com.huazai.b2c.aiyou.vo.TbItemVO;
 public class TbItemController
 {
 
-	@Autowired
-	private TbItemService tbItemService;
+//	@Autowired
+//	private TbItemService tbItemService;
 
-	@Autowired
-	private TbItemDescService tbItemDescService;
+//	@Autowired
+//	private TbItemDescService tbItemDescService;
 
 	@RequestMapping("/{itemId}")
 	public String showTbItemInfo(@PathVariable Long itemId, Model model)
 	{
 		// 通过商品Id，获取商品详情
-		TbItem tbItem = tbItemService.getTbItemById(itemId);
+//		TbItem tbItem = tbItemService.getTbItemById(itemId);
 		// 转换视图对象
-		TbItemVO item = new TbItemVO(tbItem);
+//		TbItemVO item = new TbItemVO(tbItem);
 		// 通过商品Id，获取商品描述
-		TbItemDesc itemDesc = tbItemDescService.geTbItemDescById(itemId);
-		model.addAttribute("item", item);
-		model.addAttribute("itemDesc", itemDesc);
+//		TbItemDesc itemDesc = tbItemDescService.geTbItemDescById(itemId);
+//		model.addAttribute("item", item);
+//		model.addAttribute("itemDesc", itemDesc);
 		return "item";
 	}
 }

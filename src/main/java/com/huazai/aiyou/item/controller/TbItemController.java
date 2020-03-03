@@ -1,15 +1,15 @@
-package com.huazai.b2c.aiyou.controller;
+package com.huazai.aiyou.item.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import com.huazai.b2c.aiyou.pojo.TbItem;
-import com.huazai.b2c.aiyou.pojo.TbItemDesc;
-import com.huazai.b2c.aiyou.service.TbItemDescService;
-import com.huazai.b2c.aiyou.service.TbItemService;
-import com.huazai.b2c.aiyou.vo.TbItemVO;
+import com.huazai.aiyou.item.vo.TbItemVO;
+import com.huazai.aiyou.manager.pojo.TbItem;
+import com.huazai.aiyou.manager.pojo.TbItemDesc;
+import com.huazai.aiyou.manager.service.TbItemDescService;
+import com.huazai.aiyou.manager.service.TbItemService;
 
 /**
  * 

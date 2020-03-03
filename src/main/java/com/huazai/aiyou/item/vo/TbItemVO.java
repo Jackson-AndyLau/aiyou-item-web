@@ -1,6 +1,6 @@
-package com.huazai.b2c.aiyou.vo;
+package com.huazai.aiyou.item.vo;
 
-import com.huazai.b2c.aiyou.pojo.TbItem;
+import com.huazai.aiyou.manager.pojo.TbItem;
 
 /**
  * 

@@ -3,22 +3,23 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
-		<groupId>com.huazai.b2c.aiyou</groupId>
+		<groupId>com.huazai.aiyou.parent</groupId>
 		<artifactId>aiyou-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
+	<groupId>com.huazai.aiyou.item</groupId>
 	<artifactId>aiyou-item-web</artifactId>
 	<packaging>war</packaging>
 	<dependencies>
 		<!-- aiyou-common -->
 		<dependency>
-			<groupId>com.huazai.b2c.aiyou</groupId>
+			<groupId>com.huazai.aiyou.common</groupId>
 			<artifactId>aiyou-common</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>
 		<!-- 展示商品信息，需要商品服务，引入 aiyou-manager-interface 接口 -->
 		<dependency>
-			<groupId>com.huazai.b2c.aiyou</groupId>
+			<groupId>com.huazai.aiyou.manager</groupId>
 			<artifactId>aiyou-manager-interface</artifactId>
 			<version>0.0.1-SNAPSHOT</version>
 		</dependency>

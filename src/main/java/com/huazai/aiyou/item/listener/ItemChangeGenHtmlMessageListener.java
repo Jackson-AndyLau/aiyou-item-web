@@ -1,4 +1,4 @@
-package com.huazai.b2c.aiyou.listener;
+package com.huazai.aiyou.item.listener;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -13,11 +13,11 @@ import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.servlet.view.freemarker.FreeMarkerConfig;
 
-import com.huazai.b2c.aiyou.pojo.TbItem;
-import com.huazai.b2c.aiyou.pojo.TbItemDesc;
-import com.huazai.b2c.aiyou.service.TbItemDescService;
-import com.huazai.b2c.aiyou.service.TbItemService;
-import com.huazai.b2c.aiyou.vo.TbItemVO;
+import com.huazai.aiyou.item.vo.TbItemVO;
+import com.huazai.aiyou.manager.pojo.TbItem;
+import com.huazai.aiyou.manager.pojo.TbItemDesc;
+import com.huazai.aiyou.manager.service.TbItemDescService;
+import com.huazai.aiyou.manager.service.TbItemService;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;

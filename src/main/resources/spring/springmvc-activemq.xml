@@ -31,14 +31,14 @@
 	</bean>
 	
 	<!-- 注入监听器 -->
-	<bean id="itemChangeGenHtmlMessageListener"
-		class="com.huazai.aiyou.item.listener.ItemChangeGenHtmlMessageListener"></bean>
-	<bean
+<!-- 	<bean id="itemChangeGenHtmlMessageListener"
+		class="com.huazai.aiyou.item.listener.ItemChangeGenHtmlMessageListener"></bean> -->
+<!-- 	<bean
 		class="org.springframework.jms.listener.DefaultMessageListenerContainer">
 		<property name="connectionFactory" ref="connectionFactory"></property>
 		<property name="destination" ref="topicDestination"></property>
 		<property name="messageListener"
 			ref="itemChangeGenHtmlMessageListener"></property>
-	</bean>
+	</bean> -->
 </beans>
 

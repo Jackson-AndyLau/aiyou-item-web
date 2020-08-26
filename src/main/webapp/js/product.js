@@ -1546,9 +1546,9 @@ var Refresh = {init: function() {
        // var t = ["2_163_817", "2_163_818", "2_232_3431", "2_163_3743"];
        // pageConfig.disabledSeoBanner || (t.push("2_163_5395"), t.push("2_163_5394")), 1315 === G.cat[0] && $("#Ad2_100_2272").length > 0 && t.push("2_100_2272"), G.isPop && t.push("2_601_3951"), $.ajax({url: "http://nfa.jd.com/loadFa_toJson.js?aid=" + t.join("-") + "&ver=20131107",dataType: "script",cache: !0}), insertScript("http://static.360buyimg.com/gemini/gemini/gemini_v2.2.1.js", {id: "1399174259281",name: "gemini_divide_script",charset: "utf-8",divideType: "MODULE_INJECT",param: "[{t:'xiaoyumi'}]"})
     })(), mark(G.sku, 1), clsPVAndShowLog("", "", 3, "p"), clsPVAndShowLog("", "", 2, "p"), $("#choose-btn-append .btn-append b").livequery("click", function() {
-        JA && JA.tracker.ngloader("item.010002", {sku: G.sku,jp: pageConfig.product.jp})
+//        JA && JA.tracker.ngloader("item.010002", {sku: G.sku,jp: pageConfig.product.jp})
     }), $("#choose-btn-coll b").click(function() {
-        JA && JA.tracker.ngloader("item.010003", {sku: G.sku})
+//        JA && JA.tracker.ngloader("item.010003", {sku: G.sku})
     }), function() {
         var t = pageConfig.product.videoPath, e = $(".detail-content"), i = $("#letv");
         if (t && 1 > i.length) {

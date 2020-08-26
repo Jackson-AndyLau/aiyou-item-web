@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-	<title>${item.title } - 淘淘</title>
+	<title>${item.title } - 哎呦</title>
 	<script>var jdpts = new Object(); jdpts._st = new Date().getTime();</script>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<link rel="stylesheet" type="text/css" href="/css/taotao.css" media="all" />
@@ -302,9 +302,11 @@
 
 	function addCartItem(){
 		// 获取购买商品数量
+		alert("123123"+$("#buy-num").var());
 		var itemNum = $("#buy-num").var();
+		alert("123123"+itemNum);
 		// 页面跳转
-		location.herf="http://localhost:8090/cart/add/${item.id}.html?num"+itemNum;
+		location.herf="http://localhost:8099/item/cart/add/${item.id}.html?num"+itemNum;
 	}
 </script>
 </body>

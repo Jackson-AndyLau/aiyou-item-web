@@ -1,8 +1,6 @@
 # aiyou-item-web
 # B2C 哎呦商城商品详情WEB服务
 
-# aiyou-sso
-# 哎哟商城单点登录系统
 ## 目录
 - [前言](https://github.com/Jackson-AndyLau/aiyou-sso#%E5%89%8D%E8%A8%80)
 - [一、项目总体架构](https://github.com/Jackson-AndyLau/aiyou-sso#%E4%B8%80%E9%A1%B9%E7%9B%AE%E6%80%BB%E4%BD%93%E6%9E%B6%E6%9E%84)
